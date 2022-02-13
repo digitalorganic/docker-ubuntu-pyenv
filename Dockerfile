@@ -1,6 +1,6 @@
-FROM ubuntu:18.04
+FROM ubuntu:20.04
 
-MAINTAINER Alessandro Amici <a.amici@bopen.eu>
+LABEL maintainer="docker@do.co.th"
 
 ARG DEBIAN_FRONTEND="noninteractive"
 
@@ -22,7 +22,6 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
         libncursesw5-dev \
         libreadline-dev \
         libsqlite3-dev \
-        libssl1.0-dev \
         liblzma-dev \
         # libssl-dev \
         llvm \
