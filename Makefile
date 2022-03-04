@@ -1,6 +1,6 @@
 # Development targets
 
-IMAGE := bopen/ubuntu-pyenv
+IMAGE := digitalorganic/ubuntu-python
 DOCKERBUILDFLAGS := --pull
 
 REQUIREMENTS_TXT := requirements-setup.txt requirements-test.txt requirements-ci.txt
