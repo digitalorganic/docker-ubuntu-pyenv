@@ -1,6 +1,6 @@
 FROM ubuntu:18.04
 
-MAINTAINER Alessandro Amici <a.amici@bopen.eu>
+LABEL org.opencontainers.image.authors="docker@do.co.th"
 
 ARG DEBIAN_FRONTEND="noninteractive"
 
