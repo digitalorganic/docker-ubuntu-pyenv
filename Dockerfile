@@ -1,6 +1,6 @@
 FROM ubuntu:16.04
 
-MAINTAINER Alessandro Amici <a.amici@bopen.eu>
+LABEL org.opencontainers.image.authors="docker@do.co.th"
 
 ARG DEBIAN_FRONTEND="noninteractive"
 
@@ -48,3 +48,5 @@ RUN pip install -r /requirements-setup.txt \
     && find $PYENV_ROOT/versions -type d '(' -name '__pycache__' -o -name 'test' -o -name 'tests' ')' -exec rm -rf '{}' + \
     && find $PYENV_ROOT/versions -type f '(' -name '*.pyo' -o -name '*.exe' ')' -exec rm -f '{}' + \
  && rm -rf /tmp/*
+
+RUN pip install --upgrade pip
