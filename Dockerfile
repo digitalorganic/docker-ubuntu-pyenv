@@ -1,4 +1,4 @@
-FROM ubuntu:16.04
+FROM ubuntu:14.04
 
 LABEL org.opencontainers.image.authors="docker@do.co.th"
 
