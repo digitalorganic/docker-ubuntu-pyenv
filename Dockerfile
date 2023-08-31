@@ -49,4 +49,4 @@ RUN pip install -r /requirements-setup.txt \
     && find $PYENV_ROOT/versions -type f '(' -name '*.pyo' -o -name '*.exe' ')' -exec rm -f '{}' + \
  && rm -rf /tmp/*
 
-RUN pip install --upgrade pip
+# RUN pip install --upgrade pip
